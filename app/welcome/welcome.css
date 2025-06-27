@@ -1,0 +1,98 @@
+.main {
+    background-color: #002130;
+    background-image: url('../welcome/assets/carbon-fibre-v2.png');
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding-top: 16px;
+    padding-bottom: 4px;
+    list-style: auto;
+}
+
+.main__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    padding: 16px;
+}
+
+.main__header h1 {
+    font-size: 2.5rem; /* Equivalent to text-3xl */
+    font-weight: bold; /* Equivalent to font-bold */
+    text-align: center; /* Equivalent to text-center */
+    color: #8e75f0;
+}
+
+.main__body {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.main__body__row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    height: min-content;
+    gap: 16px;
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+.main__body__box {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+
+.main__body__box ul {
+    list-style-type: disc;
+    color: #d1d5db; /* Equivalent to text-gray-300 */
+    padding-left: 20px; /* Equivalent to pl-5 */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+.main__body__box h2 {
+    font-size: 1.875rem; /* Equivalent to text-2xl */
+    font-weight: bold; /* Equivalent to font-bold */
+    color: #ab9fda;
+    margin-bottom: 8px; /* Equivalent to mb-2 */
+}
+.main__body__box p {
+    font-size: 1rem; /* Equivalent to text-base */
+    color: #d1d5db; /* Equivalent to text-gray-300 */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+.main__body__box a {
+    color: #8e75f0; /* Equivalent to text-indigo-400 */
+    text-decoration: none; /* Equivalent to no-underline */
+}
+.main__body__box a:hover {
+    text-decoration: underline; /* Equivalent to underline */
+}
+
+.main__body__picture {
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.main__body__picture__img {
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Prevent the image from exceeding the height of the box */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
