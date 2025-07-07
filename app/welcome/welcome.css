@@ -1,0 +1,79 @@
+main {
+    background-color: #002130;
+    background-image: url('../welcome/assets/carbon-fibre-v2.png');
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#about {
+    padding: 64px var(--side-padding);
+    display: flex;
+    flex-flow: column wrap;
+
+    .row {
+        max-width: 1500px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .picture.a {
+        background-image: url(/app/welcome/assets/me.jpg);
+    }
+
+    .picture {
+        width: 400px;
+        min-height: 400px;
+        padding: 12px;
+        border-radius: 12px;
+        border: double 2px transparent;
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: stretch;
+        justify-content: left;
+        width: auto;
+        height: auto;
+        padding: 16px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+    }
+
+    .box ul {
+        list-style-type: disc;
+        color: #d1d5db; 
+        padding-left: 20px; 
+        margin-bottom: 16px; 
+    }
+
+    .box h2 {
+        font-size: 1.875rem; 
+        font-weight: bold; 
+        color: #ab9fda;
+        margin-bottom: 8px; 
+    }
+    .box p {
+        font-size: 1rem; 
+        color: #d1d5db; 
+        margin-bottom: 16px; 
+    }
+
+    .box a {
+        color: #8e75f0; 
+        text-decoration: none; 
+    }
+    .box a:hover {
+        text-decoration: underline; 
+    }
+}
+

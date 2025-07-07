@@ -1,0 +1,66 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 3rem; 
+    font-weight: bold; 
+    text-align: center; 
+    color: #8e75f0;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    gap: 4px;
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 25%;
+}
+
+.buttons a {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+    -webkit-text-stroke: 0px #232323;
+    background-color: #8e75f0;
+    transition: all 0.3s;
+}
+
+.buttons a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    color: blueviolet;
+    white-space: nowrap;
+    transition: all 0.3s;
+}
+.buttons [data-animation] a::before,
+.buttons a:hover::before {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.buttons [data-animation] a,
+.buttons a:hover {
+    padding-left: 16px;
+    padding-right: 16px;
+}
