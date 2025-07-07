@@ -13,3 +13,7 @@ body {
     color-scheme: dark;
   }
 }
+
+:root {
+  --side-padding: 128px;
+}
